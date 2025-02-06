@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chôm Chôm Cái Mơn - Đặc sản trái cây Bến Tre</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://img.tripi.vn/cdn-cgi/image/width=700,height=700/https://gcs.tripi.vn/public-tripi/tripi-feed/img/474118CkR/background-powerpoint-trai-cay-dep_044211553.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            color: #333;
+            opacity: 0;
+            transition: opacity 1s ease;
+        }
+        body.loaded {
+            opacity: 1;
+        }
+        header {
+            background: rgba(34, 139, 34, 0.8);
+            padding: 20px;
+            text-align: center;
+            color: white;
+       }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        .navbar.scrolled {
+            background-color: #1c6b1c;
+        }
+        .menu a {
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .menu a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+        .content {
+            max-width: 1200px;
+            margin: 20px auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            text-align: center;
+            color: #1c6b1c;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+        .image-content {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+            gap: 20px;
+        }
+        .image-content img {
+            width: 50%;
+            height: auto;
+            border-radius: 5px;
+        }
+        h2 {
+            color: #1c6b1c;
+            margin-top: 20px;
+            font-size: 1.8em;
+            border-bottom: 2px solid #228B22;
+            padding-bottom: 10px;
+        }
+        p, ul {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        ul li::before {
+            content: '✓';
+            color: #228B22;
+            margin-right: 10px;
+        }
+        .back-to-home {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #228B22;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .back-to-home:hover {
+            background-color: #1c6b1c;
+            transform: translateY(-2px);
+        }
+        footer {
+            background: rgba(34, 139, 34, 0.9);
+            text-align: center;
+            padding: 10px;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #228B22;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #e0ffe0;
+             }
+        .logo {
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+          <h1 style="background: white;">Trái Cây Bến Tre</h1>
+    </header>
+
+    <div class="navbar">
+        <div class="logo">Chôm Chôm Cái Mơn</div>
+        <div class="menu">
+            <a href="index.html">Trang chủ</a>
+            <a href="detail.html">Chi tiết trái cây</a>
+            <a href="contact.html">Liên hệ</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <h1>Chôm Chôm Cái Mơn</h1>
+        
+        <div class="section">
+            <div class="image-content">
+                <img src="https://caythuoc.org/wp-content/uploads/2019/07/AABDZN5_6.jpg" alt="Chôm Chôm">
+                <div class="text">
+                    <h2>1. Đặc điểm</h2>
+                    <p> Vỏ chôm chôm nhãn mỏng, nhẵn, có màu đỏ tươi hoặc đôi khi là màu hồng cam, rất bắt mắt. Đây là điểm khác biệt với các loại chôm chôm khác có vỏ gai thô, sắc nhọn.</p>
+
+<p>Thịt chôm chôm nhãn trắng, mọng nước và có độ giòn nhẹ. Khi ăn, bạn sẽ cảm nhận được sự ngọt thanh, mát lành và không quá ngọt gắt, rất dễ ăn.</p>
+
+<p> Chôm chôm nhãn nổi bật với hương vị ngọt thanh và mát, khác biệt với các loại chôm chôm khác có vị ngọt đậm hoặc hơi chua. Đó là lý do khiến nó được nhiều người ưa chuộng.</p>
+                    </div>
+                  </div>
+               <div class="section">
+            <div class="image-content">
+                    <img src="http://blogcaycanh.vn/files/large/5f76a79686d027c" alt="Chôm Chôm - Hình ảnh">
+                    <div class="text">
+                   <p> <strong>Lý do đặc trưng:</strong>  
+                    <p> Bến Tre nằm ở vùng đồng bằng sông Cửu Long, nơi có đất phù sa màu mỡ do phù sa của các con sông lớn mang lại. Đất này rất thích hợp cho việc trồng cây ăn trái, trong đó có chôm chôm. Các dưỡng chất có trong đất giúp cây chôm chôm phát triển mạnh mẽ, ra trái lớn, ngon và ngọt.</p>
+                    <p>Người dân Bến Tre đã trồng chôm chôm trong nhiều năm, với nhiều thế hệ kinh nghiệm truyền lại. Họ áp dụng các kỹ thuật trồng cây chuyên nghiệp như chăm sóc đất, tỉa cành, phòng trừ sâu bệnh, và thu hoạch đúng mùa. Những kiến thức này giúp đảm bảo chất lượng trái cây đạt mức cao nhất, với hương vị ngọt ngào, tươi mát.</p>
+                   <p> Bến Tre có khí hậu nhiệt đới, ấm áp và nhiều nắng, điều này cũng là yếu tố lý tưởng cho chôm chôm phát triển. Cây chôm chôm cần nhiều ánh sáng và thời gian sinh trưởng ổn định để ra trái ngọt.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>2. Công dụng</h2>
+            <div class="image-content">
+                <img src="https://quangon.vn/resources/2021/01/07/loi-ich-cua-chom-chom-3.jpg" alt="Công dụng của Chôm Chôm">
+                <div class="text">
+                    <ul>
+                        <li>Làm mát cơ thể, bổ sung vitamin C và khoáng chất.</li>
+                        <li>Tăng cường năng lượng tức thì nhờ lượng đường tự nhiên.</li>
+                    </ul>
+                    <h3>Lợi ích sức khỏe:</h3>
+                    <ul>
+                        <li>Vitamin C trong chôm chôm giúp cải thiện miễn dịch và chống oxy hóa.</li>
+                        <li>Chứa sắt, hỗ trợ sản sinh hồng cầu và ngăn ngừa thiếu máu.</li>
+                        <li>Hàm lượng nước cao giúp cấp nước và duy trì độ ẩm cho cơ thể.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>3. Các món từ chôm chôm</h2>
+            <h3>Chôm chôm ngâm đường</h3>
+            <div class="image-content">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz7wfV8KX9Ix5G7tyiKHAYxrTIifMrEkOnrA&s" alt="Chôm Chôm Ngâm Đường">
+                <div class="text">
+                    <p><strong>Nguyên liệu:</strong></p>
+                    <ul>
+                        <li>Chôm chôm</li>
+                        <li>Đường phèn</li>
+                        <li>Nước lọc</li>
+                    </ul>
+                    <p><strong>Cách chế biến:</strong></p>
+                    <ol>
+                        <li>Bóc vỏ chôm chôm, giữ nguyên hạt.</li>
+                        <li>Đun nước với đường phèn cho tan, để nguội rồi cho chôm chôm vào ngâm.</li>
+                        <li>Để trong tủ lạnh 1-2 ngày trước khi dùng.</li>
+                         <a class="link-video" href="https://www.tiktok.com/@nhivinbar/video/7374262130188487952?is_from_webapp=1&sender_device=pc&web_id=7467452659059262992" target="_blank">Xem video chi tiết </a>
+                    </ol>
+                </div>
+            </div>
+
+            <h3>Salad chôm chôm</h3>
+            <div class="image-content">
+                <img src="https://cdn.tgdd.vn/Files/2023/03/02/1514300/cach-lam-goi-ga-chom-chom-cuc-ngon-ma-ai-cung-lam-duoc-202303021628587667.jpg" alt="Salad Chôm Chôm">
+                <div class="text">
+                    <p><strong>Nguyên liệu:</strong></p>
+                    <ul>
+                        <li>Chôm chôm bóc vỏ</li>
+                        <li>Táo</li>
+                        <li>Lê</li>
+                        <li>Sữa chua</li>
+                        <li>Mật ong</li>
+                    </ul>
+                    <p><strong>Cách chế biến:</strong></p>
+                    <ol>
+                        <li>Cắt nhỏ các loại trái cây, trộn với sữa chua và mật ong.</li>
+                        <li>Thêm chôm chôm, để lạnh trước khi ăn.</li>
+                        <a class="link-video" href="https://www.tiktok.com/@kingfoodmart/video/7235267604292652294?is_from_webapp=1&sender_device=pc&web_id=7467452659059262992" target="_blank">Xem video chi tiết</a>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>4. Chuẩn bị trước khi trồng</h2>
+            <table>
+                <tr>
+                    <th>Yếu tố</th>
+                    <th>Chi tiết</th>
+                </tr>
+                <tr>
+                    <td>Chọn giống</td>
+                    <td>Chọn giống chôm chôm tốt, khỏe mạnh, phù hợp với điều kiện khí hậu và thổ nhưỡng nơi trồng. Một số giống chôm chôm phổ biến là chôm chôm Java, chôm chôm đường, chôm chôm nhãn. Ưu tiên cây giống từ các vườn ươm uy tín.</td>
+                </tr>
+                <tr>
+                    <td>Đất trồng</td>
+                    <td>Chôm chôm phát triển tốt trên đất tơi xốp, giàu dinh dưỡng, thoát nước tốt. Độ pH thích hợp từ 5.0 - 6.0. Tránh trồng trên đất ngập nước lâu dài.</td>
+                </tr>
+                <tr>
+                    <td>Thời vụ trồng</td>
+                    <td>Có thể trồng chôm chôm quanh năm, nhưng tốt nhất là vào đầu mùa mưa (tháng 5 - tháng 6) để cây có điều kiện phát triển tốt nhất.</td>
+                </tr>
+                <tr>
+                    <td>Chuẩn bị hố trồng</td>
+                    <td>Kích thước hố: 60x60x60 cm hoặc 80x80x80 cm. Bón lót: Trộn phân chuồng hoai mục (10-20 kg), phân lân (200-300g) và vôi bột (1-2 kg) vào đất hố, sau đó để khoảng 15-20 ngày trước khi trồng.</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>5. Kỹ thuật trồng và chăm sóc cây chôm chôm</h2>
+            <h3>Kỹ thuật trồng</h3>
+            <p>Khi trồng cây, cần đặt cây con vào hố sao cho bầu cây ngang với mặt đất. Điều này giúp cây dễ dàng phát triển và không bị ngập nước hoặc khô rễ.</p>
+
+<p>Sau khi đặt cây con vào hố, nhẹ nhàng lấp đất xung quanh bầu cây. Lấp đất một cách đều đặn và nén chặt nhẹ để gốc cây được cố định và không bị lung lay.<p>
+
+<p> Cắm một cây cọc vào gốc cây để cố định, tránh bị gió làm đổ trong những ngày đầu. Cọc giúp cây ổn định, tạo điều kiện cho rễ phát triển mạnh mẽ hơn.</p>
+            <h3>Chăm sóc cây chôm chôm</h3>
+            <p><strong>Tưới nước:</strong> Giai đoạn đầu (1-2 năm): Tưới nước đều đặn, đảm bảo đất ẩm nhưng không ngập úng. Giai đoạn trưởng thành: Tưới nước đủ để cây phát triển tốt, đặc biệt trong mùa khô.</p>
+            <p><strong>Phân bón:</strong> Năm 1-2: Bón phân NPK (2-3 lần/năm) và phân chuồng hoai mục. Năm 3 trở đi: Bón phân theo chu kỳ sinh trưởng và phát triển (sau thu hoạch, trước ra hoa, nuôi trái). Lượng phân NPK có thể tăng lên 3-4 lần/năm.</p>
+            <p><strong>Cắt tỉa và tạo tán:</strong> Cắt bỏ các cành yếu, sâu bệnh. Tạo tán dạng tròn để cây nhận đủ ánh sáng và thông thoáng.</p>
+            <p><strong>Phòng trừ sâu bệnh:</strong> Kiểm tra thường xuyên, xử lý kịp thời các loại sâu bệnh thường gặp như: sâu đục thân, bệnh thán thư, bệnh cháy lá. Sử dụng các biện pháp sinh học hoặc hóa học theo hướng dẫn kỹ thuật.</p>
+        </div>
+
+        <div class="section">
+            <h2>6. Thu hoạch chôm chôm</h2>
+            <p>Chôm chôm thường bắt đầu cho quả sau khoảng 3-4 năm trồng, tùy thuộc vào giống cây và điều kiện chăm sóc.</p>
+<p>Thời gian thu hoạch sẽ thay đổi theo giống và khí hậu, nhưng thường sẽ rơi vào mùa hè hoặc đầu thu.</p>
+            <p><strong>Dấu hiệu nhận biết:</strong> Quả chôm chôm đã chín khi vỏ có màu đỏ tươi hoặc vàng, tùy thuộc vào giống.</p>
+<p>Khi ấn nhẹ vào quả, vỏ sẽ có cảm giác mềm, điều này cho thấy quả đã chín và sẵn sàng thu hoạch.</p>
+<p>Trái chôm chôm chín sẽ có mùi thơm đặc trưng.</p>
+            <p><strong>Cách thu hoạch:</strong></p>
+            <ul>
+                <li>Dùng dao sắc cắt cuống quả chôm chôm, giữ lại khoảng 3-5 cm cuống để tránh làm hư trái.</li>
+                <li>Cẩn thận khi thu hoạch để tránh làm rơi quả hoặc làm tổn thương đến vỏ quả, vì quả dễ bị hư hỏng.</li>
+                 <li>Sau khi thu hoạch, bảo quản quả chôm chôm ở nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp</li>
+                <li>Nếu có nhu cầu bảo quản lâu dài, có thể bảo quản trong tủ lạnh hoặc sử dụng phương pháp chế biến như sấy khô.</li>        
+            </ul>
+
+            <p><strong>Lưu ý quan trọng:</strong>
+            <p>Lựa chọn giống chôm chôm có khả năng thích nghi tốt với điều kiện khí hậu và đất đai của khu vực trồng. Các giống như chôm chôm Nhãn, Bà Rịa thường cho năng suất cao.</p>
+            <p>Cung cấp đủ nước và phân bón trong các giai đoạn quan trọng như ra hoa, nuôi quả để cây phát triển mạnh mẽ và cho trái chất lượng cao.</p>
+            <p> Theo dõi cây thường xuyên để phát hiện sâu bệnh sớm và xử lý kịp thời. Các loại sâu đục thân, bệnh thán thư, và bệnh cháy lá có thể làm hỏng cây và quả.</p>
+            <p>Thu hoạch khi quả đã chín (vỏ đỏ hoặc vàng, ấn vào thấy mềm). Thu hoạch quá sớm hoặc quá muộn có thể làm giảm chất lượng quả.</P>
+        </div>
+
+       <a href="detail.html" class="back-to-home">Về trang chi tiết </a>
+        <div class="section">
+    <h2>7. Bình luận</h2>
+    <div id="comments-section">
+        <form id="comment-form">
+            <input type="text" id="name" placeholder="Tên của bạn" required>
+            <textarea id="comment" placeholder="Bình luận của bạn..." required></textarea>
+            <button type="submit">Gửi bình luận</button>
+        </form>
+        <div id="comments-list"></div>
+    </div>
+</div>
+
+<style>
+    #comments-section {
+        margin-top: 20px;
+        padding: 10px;
+        border: 1px solid #228B22;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+    #comment-form {
+        display: flex;
+        flex-direction: column;
+    }
+    #name, #comment {
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    #comment {
+        resize: vertical;
+    }
+    button {
+        padding: 10px;
+        background-color: #228B22;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #1c6b1c;
+    }
+    .comment-item {
+        margin-top: 10px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+</style>
+
+<script>
+    document.getElementById('comment-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        const name = document.getElementById('name').value;
+        const comment = document.getElementById('comment').value;
+
+        const commentsList = document.getElementById('comments-list');
+        const commentItem = document.createElement('div');
+        commentItem.classList.add('comment-item');
+        commentItem.innerHTML = <strong>${name}:</strong> <p>${comment}</p>;
+        
+        commentsList.appendChild(commentItem);
+
+        // Reset form fields
+        document.getElementById('name').value = '';
+        document.getElementById('comment').value = '';
+    });
+</script>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Chôm Chôm Cái Mơn. Bản quyền thuộc về <a href="index.html" style="color: white;">Trái Cây Đặc Sản Bến Tre</a>.</p>
+    </footer>
+
+    <script>
+        window.addEventListener('load', function() {
+            document.body.classList.add('loaded');
+        });
+
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        const images = document.querySelectorAll('img');
+        const headings = document.querySelectorAll('h2');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        });
+
+        images.forEach(image => {
+            observer.observe(image);
+        });
+
+        headings.forEach(heading => {
+            observer.observe(heading);
+        });
+    </script>
+    
+</body>
+</html>
+

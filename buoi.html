@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bưởi Da Xanh - Đặc sản trái cây Bến Tre</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://img.tripi.vn/cdn-cgi/image/width=700,height=700/https://gcs.tripi.vn/public-tripi/tripi-feed/img/474118CkR/background-powerpoint-trai-cay-dep_044211553.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            color: #333;
+            opacity: 0;
+            transition: opacity 1s ease;
+        }
+        body.loaded {
+            opacity: 1;
+        }
+        header {
+            background: rgba(34, 139, 34, 0.8);
+            padding: 20px;
+            text-align: center;
+            color: white;
+       }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        .navbar.scrolled {
+            background-color: #1c6b1c;
+        }
+        .menu a {
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .menu a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+        .content {
+            max-width: 1200px;
+            margin: 20px auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            text-align: center;
+            color: #1c6b1c;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+        .image-content {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+            gap: 20px;
+        }
+        .image-content img {
+            width: 50%;
+            height: auto;
+            border-radius: 5px;
+        }
+        h2 {
+            color: #1c6b1c;
+            margin-top: 20px;
+            font-size: 1.8em;
+            border-bottom: 2px solid #228B22;
+            padding-bottom: 10px;
+        }
+        p, ul {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        ul li::before {
+            content: '✓';
+            color: #228B22;
+            margin-right: 10px;
+        }
+        .back-to-home {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #228B22;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .back-to-home:hover {
+            background-color: #1c6b1c;
+            transform: translateY(-2px);
+        }
+        footer {
+            background: rgba(34, 139, 34, 0.9);
+            text-align: center;
+            padding: 10px;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #228B22;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #e0ffe0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+         <h1 style="background: white;">Trái Cây Bến Tre</h1>
+    </header>
+
+    <div class="navbar">
+        <div class="logo">Bưởi Da Xanh</div>
+        <div class="menu">
+            <a href="index.html">Trang chủ</a>
+            <a href="detail.html">Chi tiết trái cây</a>
+            <a href="contact.html">Liên hệ</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <h1>Bưởi Da Xanh</h1>
+        
+        <div class="section">
+            <div class="image-content">
+                <img src="https://btgtu.lamdong.dcs.vn/Portals/17/media/newsimage/b/u/o/buoi-da-xanh-da-dinh-hinh-tren-dat-da-teh.jpg" alt="Bưởi Da Xanh">
+                <div class="text">
+                    <h2>1. Đặc điểm</h2>
+                    <p>Bưởi da xanh là đặc sản nổi tiếng của miền Tây Nam Bộ, đặc biệt phổ biến ở Bến Tre, Tiền Giang và Vĩnh Long. Trái bưởi có vỏ màu xanh ngay cả khi chín, mỏng, dễ bóc. Bên trong, múi bưởi màu hồng hoặc đỏ cam, mọng nước, vị ngọt thanh, hơi chua nhẹ, không đắng và có ít hoặc không hạt.
+
+Cây bưởi da xanh có thể ra trái quanh năm, với năng suất cao, mỗi cây cho từ 100–150 trái nếu được chăm sóc tốt. Nhờ chất lượng vượt trội, bưởi da xanh được ưa chuộng không chỉ trong nước mà còn xuất khẩu, mang lại giá trị kinh tế cao. Loại bưởi này thường được dùng để ăn tươi, làm nước ép hoặc chế biến thực phẩm, góp phần nâng tầm thương hiệu trái cây Việt Nam.</p>
+                     </div>
+                 </div>
+             </div> 
+             <div class="section">
+            <div class="image-content">
+                <img src="https://bcp.cdnchinhphu.vn/334894974524682240/2022/10/15/dd2nrpt-scaled-1665822458707765042836.jpg" alt="Bưởi Da Xanh">
+                <div class="text">
+                    <p><strong>Lý do đặc trưng:</strong> Bưởi da xanh trở thành đặc sản của Bến Tre nhờ điều kiện thổ nhưỡng và khí hậu thuận lợi, giúp trái bưởi có vỏ mỏng, múi hồng mọng nước, ít hạt, vị ngọt thanh đặc trưng. Bến Tre, với đất phù sa màu mỡ, là nơi trồng bưởi da xanh nhiều nhất, sản lượng ổn định và đáp ứng nhu cầu tiêu thụ trong nước lẫn xuất khẩu.
+
+Đặc biệt, bưởi da xanh Bến Tre đã được cấp chứng nhận chỉ dẫn địa lý, khẳng định chất lượng và thương hiệu nổi tiếng. Loại bưởi này không chỉ mang lại giá trị kinh tế cao, góp phần nâng cao thu nhập cho nông dân, mà còn giúp phát triển ngành nông sản Việt Nam.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>2. Công dụng</h2>
+            <div class="image-content">
+                <img src="https://cdn.nhathuoclongchau.com.vn/unsafe/800x0/filters:quality(95)/https://cms-prod.s3-sgn09.fptcloud.com/an_buoi_co_tot_khong_1_dd1ed182fc.jpg" alt="Công dụng của Bưởi Da Xanh">
+                <div class="text">
+                    <ul>
+                        <li><strong>Nước ép bưởi:</strong> Hỗ trợ giảm cân, giảm cholesterol, ngừa mỡ máu.</li>
+                        <li><strong>Tép bưởi:</strong> Giàu chất xơ, hỗ trợ tiêu hóa, ngừa táo bón.</li>
+                    </ul>
+                    <h3>Lợi ích sức khỏe:</h3>
+                    <ul>
+                        <li>Vitamin C giúp tăng cường hệ miễn dịch, giảm cảm cúm.</li>
+                        <li>Chứa enzyme tự nhiên hỗ trợ đốt cháy chất béo, giảm cân hiệu quả.</li>
+                        <li>Giảm viêm, cải thiện sức khỏe làn da và bảo vệ cơ thể khỏi các gốc tự do.</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>3. Các món từ bưởi da xanh</h2>
+            <h3>Gỏi bưởi tôm thịt</h3>
+            <div class="image-content">
+                <img src="https://cdn.tgdd.vn/Files/2023/11/07/1554279/cach-lam-goi-buoi-tom-thit-gion-gion-chua-ngot-cuc-hap-dan-202311071048321190.jpg" alt="Gỏi Bưởi Tôm Thịt">
+                <div class="text">
+                    <p><strong>Nguyên liệu:</strong></p>
+                    <ul>
+                        <li>Tép bưởi</li>
+                        <li>Tôm luộc</li>
+                        <li>Thịt ba chỉ luộc</li>
+                        <li>Rau thơm</li>
+                        <li>Đậu phộng</li>
+                        <li>Nước mắm chua ngọt</li>
+                    </ul>
+                    <p><strong>Cách chế biến:</strong></p>
+                    <ol>
+                        <li>Tách tép bưởi, cắt nhỏ thịt ba chỉ, bóc vỏ tôm.</li>
+                        <li>Trộn tất cả với nước mắm chua ngọt, thêm rau thơm, đậu phộng.</li>
+                        <li>Dùng ngay với bánh phồng tôm.</li>
+                        <a class="link-video" href="https://www.tiktok.com/@adamchef156/video/7275169863730040082?is_from_webapp=1&sender_device=pc&web_id=7467452659059262992" target="_blank">Xem video chi tiết</a>
+                    </ol>
+                </div>
+            </div>
+
+            <h3>Nước ép bưởi</h3>
+            <div class="image-content">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.0RUEHphtCWBAzzzTAmuCAwHaFN&pid=Api&P=0&h=220" alt="Nước Ép Bưởi">
+                <div class="text">
+                    <p><strong>Nguyên liệu:</strong></p>
+                    <ul>
+                        <li>Bưởi</li>
+                        <li>Mật ong</li>
+                        <li>Đá viên</li>
+                    </ul>
+                    <p><strong>Cách chế biến:</strong></p>
+                    <ol>
+                        <li>Tách tép bưởi, ép lấy nước.</li>
+                        <li>Thêm mật ong và đá viên, khuấy đều.</li>
+                        <a class="link-video" href="https://vt.tiktok.com/ZS6EJSLUu/" target="_blank">Xem video chi tiết</a>
+                    </ol>
+                </div>
+            </div>
+
+            <h3>Mứt vỏ bưởi</h3>
+            <div class="image-content">
+                 <img src="https://daylambanh.edu.vn/wp-content/uploads/2019/12/mut-vo-buoi-thom-ngon.jpg" alt="Mứt vỏ bưởi">
+                <div class="text">
+                    <p><strong>Nguyên liệu:</strong></p>
+                    <ul>
+                        <li>Vỏ bưởi</li>
+                        <li>Đường</li>
+                        <li>Muối</li>
+                        <li>Nước cốt chanh</li>
+                    </ul>
+                    <p><strong>Cách chế biến:</strong></p>
+                    <ol>
+                        <li>Gọt bỏ lớp vỏ xanh, cắt vỏ bưởi thành sợi, ngâm muối và rửa sạch để giảm đắng.</li>
+                        <li>Ướp vỏ bưởi với đường, sau đó sên trên lửa nhỏ cho đến khi khô.</li>
+                        <a class="link-video" href="https://www.tiktok.com/@myhuyendaily/video/7018500752138177818" target="_blank">Xem video chi tiết </a>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>4. Chuẩn bị trước khi trồng</h2>
+            <table>
+                <tr>
+                    <th>Yếu tố</th>
+                    <th>Chi tiết</th>
+                </tr>
+                <tr>
+                    <td>Chọn giống</td>
+                    <td>Chọn giống bưởi da xanh khỏe mạnh, không sâu bệnh, đảm bảo giống chuẩn. Nên chọn cây giống từ các vườn ươm uy tín. Giống bưởi da xanh có thể cho năng suất từ 30-50 kg/cây/năm sau 5 năm trồng.</td>
+                </tr>
+                <tr>
+                    <td>Đất trồng</td>
+                    <td>Bưởi da xanh phát triển tốt trên đất phù sa, đất tơi xốp, giàu dinh dưỡng, thoát nước tốt. Độ pH thích hợp từ 5.5 - 6.5. Tránh trồng trên đất ngập nước lâu dài.</td>
+                </tr>
+                <tr>
+                    <td>Thời vụ trồng</td>
+                    <td>Có thể trồng bưởi da xanh quanh năm, nhưng tốt nhất là vào đầu mùa mưa (tháng 5 - tháng 6) để cây có điều kiện phát triển tốt nhất.</td>
+                </tr>
+                <tr>
+                    <td>Chuẩn bị hố trồng</td>
+                    <td>Kích thước hố: 60x60x60 cm hoặc 80x80x80 cm. Bón lót: Trộn phân chuồng hoai mục (10-20 kg), phân lân (200-300g) và vôi bột (1-2 kg) vào đất hố, để khoảng 15-20 ngày trước khi trồng.</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>5. Kỹ thuật trồng và chăm sóc cây bưởi da xanh</h2>
+            <h3>Kỹ thuật trồng</h3>
+            <p>Chuẩn bị hố trồng trộn đất với phân chuồng hoai mục và vôi bột để khử trùng.</p>
+<p>Đặt cây con: Đặt bầu cây vào hố sao cho mặt bầu ngang với mặt đất.</p>
+<p>Lấp đất nhẹ nhàng, nén chặt xung quanh gốc để cố định cây.</p>
+<p>Cắm cọc cố định: Dùng cọc tre hoặc gỗ để buộc cây, tránh gió làm lay gốc.
+Tưới nước: Tưới đủ ẩm ngay sau khi trồng.</p>
+            <h3>Chăm sóc cây bưởi da xanh</h3>
+            <p><strong>Tưới nước:</strong> Giai đoạn đầu (1-2 năm): Tưới nước đều đặn, đảm bảo đất ẩm nhưng không ngập úng. Giai đoạn trưởng thành: Tưới nước đủ để cây phát triển tốt, đặc biệt trong mùa khô.</p>
+            <p><strong>Phân bón:</strong> Năm 1-2: Bón phân NPK (2-3 lần/năm) và phân chuồng hoai mục. Năm 3 trở đi: Bón phân theo chu kỳ sinh trưởng và phát triển (sau thu hoạch, trước ra hoa, nuôi trái). Lượng phân NPK có thể tăng lên 3-4 lần/năm.</p>
+            <p><strong>Cắt tỉa và tạo tán:</strong> Cắt bỏ các cành yếu, sâu bệnh. Tạo tán dạng tròn để cây nhận đủ ánh sáng và thông thoáng.</p>
+            <p><strong>Phòng trừ sâu bệnh:</strong> Kiểm tra thường xuyên, xử lý kịp thời các loại sâu bệnh thường gặp như: sâu đục thân, bệnh thán thư, bệnh cháy lá. Sử dụng các biện pháp sinh học hoặc hóa học theo hướng dẫn kỹ thuật.</p>
+        </div>
+
+        <div class="section">
+            <h2>6. Thu hoạch bưởi da xanh</h2>
+            <p>Thời gian thu hoạch: Sau 3-4 năm trồng, tùy giống. Dấu hiệu nhận biết: 
+                <p>Bưởi da xanh thường thu hoạch khi trái đã chín, vỏ chuyển từ màu xanh sáng sang màu xanh đậm và có độ bóng.</p>
+ <P>• Thời gian thu hoạch thường vào các tháng cuối năm, đặc biệt là trước Tết Nguyên Đán.</P>
+<p> • Trái chín đúng mùa có múi đầy đặn, vỏ căng mịn, không còn nhũn.</p>
+            <p><strong>Cách thu hoạch:</strong></p>
+            <ul>
+                <li>Dùng dao cắt cuống trái (dài khoảng 5-10 cm).</li>
+                <li>Tránh làm rụng hoặc gây tổn thương trái.</li>
+                <li>Bảo quản ở nơi khô ráo, thoáng mát,ránh ánh nắng trực tiếp.</li>
+                <li>Bưởi có thể được đóng gói và vận chuyển đi tiêu thụ hoặc xuất khẩu.</li>
+            </ul>
+            <p><strong>Lưu ý quan trọng:</strong>
+                <p>Chăm sóc đúng kỹ thuật trong giai đoạn ra hoa, nuôi quả để đạt chất lượng tốt nhất.</p>
+<p>Theo dõi thời tiết, đặc biệt là mưa bão, để có biện pháp che chắn, tránh rụng trái sớm.</p>
+<p>Kiểm tra độ chín trước khi thu hoạch để tránh hái non, ảnh hưởng đến vị ngọt và độ ngon của bưởi.</p>
+        </div>
+
+       <a href="detail.html" class="back-to-home">Về trang chi tiết </a>
+        <div class="section">
+    <h2>7. Bình luận</h2>
+    <div id="comments-section">
+        <form id="comment-form">
+            <input type="text" id="name" placeholder="Tên của bạn" required>
+            <textarea id="comment" placeholder="Bình luận của bạn..." required></textarea>
+            <button type="submit">Gửi bình luận</button>
+        </form>
+        <div id="comments-list"></div>
+    </div>
+</div>
+
+<style>
+    #comments-section {
+        margin-top: 20px;
+        padding: 10px;
+        border: 1px solid #228B22;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+    #comment-form {
+        display: flex;
+        flex-direction: column;
+    }
+    #name, #comment {
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    #comment {
+        resize: vertical;
+    }
+    button {
+        padding: 10px;
+        background-color: #228B22;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #1c6b1c;
+    }
+    .comment-item {
+        margin-top: 10px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+</style>
+
+<script>
+    document.getElementById('comment-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        const name = document.getElementById('name').value;
+        const comment = document.getElementById('comment').value;
+
+        const commentsList = document.getElementById('comments-list');
+        const commentItem = document.createElement('div');
+        commentItem.classList.add('comment-item');
+        commentItem.innerHTML = <strong>${name}:</strong> <p>${comment}</p>;
+        
+        commentsList.appendChild(commentItem);
+
+        // Reset form fields
+        document.getElementById('name').value = '';
+        document.getElementById('comment').value = '';
+    });
+</script>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Bưởi Da Xanh. Bản quyền thuộc về <a href="index.html" style="color: white;">Trái Cây Đặc Sản Bến Tre</a>.</p>
+    </footer>
+
+    <script>
+        window.addEventListener('load', function() {
+            document.body.classList.add('loaded');
+        });
+
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        const images = document.querySelectorAll('img');
+        const headings = document.querySelectorAll('h2');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        });
+
+        images.forEach(image => {
+            observer.observe(image);
+        });
+
+        headings.forEach(heading => {
+            observer.observe(heading);
+        });
+    </script>
+    
+</body>
+</html>

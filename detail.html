@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thư Viện Trái Cây</title>
+    <style>
+        body {
+           font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://img.tripi.vn/cdn-cgi/image/width=700,height=700/https://gcs.tripi.vn/public-tripi/tripi-feed/img/474118CkR/background-powerpoint-trai-cay-dep_044211553.jpg');
+            background-size: cover;
+            color: white;
+       
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+       }
+        .menu a {
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .menu a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .gallery-item {
+            margin: 15px;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .gallery-item img {
+            width: 200px;
+            height: auto;
+        }
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+        @media (max-width: 600px) {
+            .gallery-item {
+                flex: 0 0 100%;
+            }
+            .gallery-item img {
+                width: 100%;
+            }
+        }
+        @media (min-width: 601px) {
+            .gallery-item {
+                flex: 0 0 calc(33.333% - 30px);
+            }
+        }
+        .details {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #333;
+        }
+        .back-to-home {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #228B22;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .back-to-home:hover {
+            background-color: #1c6b1c;
+            }
+        .logo {
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .logo-image {
+            width: 50px;  /* Kích thước logo */
+            height: 50px;
+            border-radius: 50%;  /* Tạo hình tròn */
+            margin-left: 10px;  /* Khoảng cách giữa logo và tên nhóm */
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Nhóm 04 12A1 <img src="https://toni.vn/uploads/article/project-ben-tre-1591525599.jpg" alt="Logo" class="logo-image"></div> <!-- Thay đổi URL của logo ở đây -->
+        <div class="menu">
+            <a href="index.html">Trang chủ</a>
+            <a href="detail.html">Chi tiết trái cây</a>
+            <a href="contact.html">Liên hệ</a>
+        </div>
+    </div>
+
+    <h1>Giới thiệu Đặc sản Trái Cây</h1>
+
+    <div class="gallery" id="products">
+        <div class="gallery-item">
+            <h3>Dừa Bến Tre</h3>
+            <a href="dua.html">
+                <img src="https://mia.vn/media/uploads/blog-du-lich/dua-ben-tre-cung-suc-hut-den-tu-san-vat-thien-nhien-mien-song-nuoc-03-1664926475.jpeg" alt="Dừa Bến Tre">
+            </a>
+            <p class="details">Nhấn vào hình ảnh để tìm hiểu thêm về Dừa Bến Tre!</p>
+        </div>
+        <div class="gallery-item">
+            <h3>Bưởi Da Xanh</h3>
+            <a href="buoi.html">
+                <img src="https://nongsantanlapmocchau.com/wp-content/uploads/2022/08/buoi-da-xanh-1.jpg" alt="Bưởi Da Xanh">
+            </a>
+            <p class="details">Nhấn vào hình ảnh để tìm hiểu thêm về Bưởi Da Xanh!</p>
+        </div>
+        <div class="gallery-item">
+            <h3>Sầu Riêng Cái Mơn</h3>
+            <a href="saurieng.html">
+                <img src="https://mia.vn/media/uploads/blog-du-lich/kham-pha-sau-rieng-cai-mon-dac-san-ben-tre-noi-tieng-gan-xa-03-1664929836.jpeg" alt="Sầu Riêng Cái Mơn">
+            </a>
+            <p class="details">Nhấn vào hình ảnh để tìm hiểu thêm về Sầu Riêng Cái Mơn!</p>
+        </div>
+        <div class="gallery-item">
+            <h3>Măng Cụt Bến Tre</h3>
+            <a href="mangcut.html">
+                <img src="https://huucothuanthien.com/wp-content/uploads/2023/06/cay-mang-cut-beetrees-5.jpg" alt="Măng Cụt Beetrees">
+            </a>
+            <p class="details">Nhấn vào hình ảnh để tìm hiểu thêm về Măng Cụt Bến Tre!</p>
+        </div>
+        <div class="gallery-item">
+            <h3>Chôm Chôm</h3>
+            <a href="chomchom.html">
+                <img src="https://caygiong.com/cdn/shop/products/chomchomindo-b9413f5d-2a00-4e9a-815c-6fa54c8c86ad.jpg?v=1702799884" alt="Chôm Chôm Indo">
+            </a>
+            <p class="details">Nhấn vào hình ảnh để tìm hiểu thêm về Chôm Chôm !</p>
+        </div>
+    </div>
+
+    <a href="index.html" class="back-to-home">Về trang chủ</a>
+
+</body>
+</html>

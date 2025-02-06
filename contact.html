@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ - Đặc sản trái cây thiên nhiên</title>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://img.tripi.vn/cdn-cgi/image/width=700,height=700/https://gcs.tripi.vn/public-tripi/tripi-feed/img/474118CkR/background-powerpoint-trai-cay-dep_044211553.jpg');
+            background-size: cover;
+            color: black;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center; /* căn giữa các phần tử theo chiều dọc */
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        .menu a {
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .menu a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+        .hero-section {
+            text-align: center;
+            padding: 100px 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .gallery-item {
+            margin: 15px;
+            text-align: center;
+            max-width: 250px;
+            border: 2px solid white;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+        }
+        .gallery-item h3 {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            margin: 0;
+            transition: background-color 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+        .gallery-item:hover h3 {
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+        #scrollToTopBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 50%;
+            transition: background-color 0.3s ease;
+        }
+        #scrollToTopBtn:hover {
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            margin-top: 50px;
+            color: white;
+        }
+        #loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+        .loader {
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #4CAF50;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .khung {
+            border: 2px solid #4CAF50;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+        .logo {
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .logo-image {
+            width: 50px;  /* Kích thước logo */
+            height: 50px;
+            border-radius: 50%;  /* Tạo hình tròn */
+            margin-left: 10px;  /* Khoảng cách giữa logo và tên nhóm */
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Nhóm 04 12A1 <img src="https://toni.vn/uploads/article/project-ben-tre-1591525599.jpg" alt="Logo" class="logo-image"></div> <!-- Thay đổi URL của logo ở đây -->
+        <div class="menu">
+            <a href="index.html">Trang chủ</a>
+            <a href="detail.html">Chi tiết trái cây</a>
+            <a href="contact.html">Liên hệ</a>
+        </div>
+    </div>
+
+    <!-- Phần liên hệ -->
+    <div class="khung">
+        <div class="contact-info">
+            <h2>Liên hệ với chúng tôi</h2>
+            <p>Địa chỉ: Thành phố Bến Tre, Việt Nam</p>
+            <p>Email: nhom04.12a1@gmail.com</p>
+            <p>Điện thoại: +84 984 887 964</p>
+            <p> Nếu bạn có thắc mắc gì hãy đặt câu hỏi cho chúng tôi và đóng góp giúp chúng tôi cải thiện hơn nhé! Nhận phản hồi sớm hơn tại:</p>
+            <p> Nếu bạn muốn được giải đáp sớm hãy điền vào link form này nhé</p>
+            <a href="https://forms.gle/4uhunjUxwgK8dSjC7" class="form-link">Google Form</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Đặc sản trái cây thiên nhiên. Tất cả quyền được bảo vệ.</p>
+    </footer>
+
+</body>
+</html>

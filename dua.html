@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dừa Bến Tre - Đặc sản trái cây Bến Tre</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://img.tripi.vn/cdn-cgi/image/width=700,height=700/https://gcs.tripi.vn/public-tripi/tripi-feed/img/474118CkR/background-powerpoint-trai-cay-dep_044211553.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            color: #333;
+            opacity: 0;
+            transition: opacity 1s ease;
+        }
+        body.loaded {
+            opacity: 1;
+        }
+        header {
+            background: rgba(34, 139, 34, 0.8);
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        .navbar.scrolled {
+            background-color: #1c6b1c;
+        }
+        .menu a {
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .menu a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+        .content {
+            max-width: 1200px;
+            margin: 20px auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            text-align: center;
+            color: #1c6b1c;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+        .image-content {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+            gap: 20px;
+        }
+        .image-content img {
+            width: 50%;
+            height: auto;
+            border-radius: 5px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        .image-content img.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        h2 {
+            color: #1c6b1c;
+            margin-top: 20px;
+            font-size: 1.8em;
+            border-bottom: 2px solid #228B22;
+            padding-bottom: 10px;
+        }
+        p, ul {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        ul li::before {
+            content: '✓';
+            color: #228B22;
+            margin-right: 10px;
+        }
+        .back-to-home {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #228B22;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .back-to-home:hover {
+            background-color: #1c6b1c;
+            transform: translateY(-2px);
+        }
+        footer {
+            background: rgba(34, 139, 34, 0.9);
+            text-align: center;
+            padding: 10px;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #228B22;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #e0ffe0;
+            }
+        .logo {
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 style="background: white;">Trái Cây Bến Tre</h1>
+    </header>
+
+    <div class="navbar">
+        <div class="logo">Dừa Bến Tre</div>
+        <div class="menu">
+            <a href="index.html">Trang chủ</a>
+            <a href="detail.html">Chi tiết trái cây</a>
+            <a href="contact.html">Liên hệ</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <h1>Dừa Bến Tre</h1>
+        
+        <div class="section">
+            <div class="image-content">
+                <img src="https://media.loveitopcdn.com/22928/thumb/dua-xiem-xanh-ben-tre.jpg" alt="Dừa Bến Tre">
+                <div class="text">
+                    <h2>1. Đặc điểm</h2>
+                    <p>Dừa xiêm là giống dừa được trồng nhiều ở miền Tây Nam Bộ nhờ năng suất cao và chất lượng nước tuyệt vời. Cây có thân nhỏ, thấp, tán lá rộng, phát triển nhanh và bắt đầu cho trái sau khoảng 3–4 năm. Mỗi cây có thể cho từ 120–150 trái mỗi năm, mọc thành buồng với số lượng lớn.
+
+Trái dừa xiêm nhỏ, vỏ mỏng, nước nhiều, vị ngọt thanh mát, thơm tự nhiên. Cơm dừa mềm, có thể ăn trực tiếp khi còn non. Nhờ hương vị thơm ngon, dừa xiêm được ưa chuộng để uống tươi, chế biến thực phẩm và xuất khẩu, góp phần quan trọng vào kinh tế vùng miền Tây sông nước.
+</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="image-content">
+                <img src="https://dulichvn.org.vn/nhaptin/uploads/images/cayduabentre1.jpg" alt="Cây Dừa Bến Tre">
+                <div class="text">
+                    <p><strong>Lý do đặc trưng:</strong>Dừa Xiêm trở thành đặc sản của Bến Tre nhờ điều kiện tự nhiên thuận lợi, với đất phù sa màu mỡ, khí hậu nhiệt đới ẩm, giúp cây phát triển tốt và cho năng suất cao. Nước dừa Xiêm Bến Tre có vị ngọt thanh, thơm tự nhiên, đặc trưng hơn so với dừa ở các vùng khác.</p>
+
+<p>Bến Tre là địa phương có diện tích trồng dừa lớn nhất Việt Nam, với truyền thống canh tác lâu đời. Người dân nơi đây có nhiều kinh nghiệm trong việc trồng và chăm sóc dừa, đảm bảo chất lượng trái luôn ổn định. Nhờ thương hiệu nổi tiếng, dừa Xiêm Bến Tre không chỉ được tiêu thụ rộng rãi trong nước mà còn xuất khẩu ra thế giới, mang lại giá trị kinh tế cao và góp phần phát triển ngành dừa Việt Nam.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>2. Công dụng</h2>
+            <div class="image-content">
+                <img src="https://static.ecosite.vn/18656/news/2022/08/01/dua-v2-1659346079.jpeg" alt="Công dụng của Dừa">
+                <div class="text">
+                    <ul>
+                        <li><strong>Nước dừa:</strong> Giàu chất điện giải, giúp giải nhiệt, bù nước, hỗ trợ tiêu hóa và tăng cường năng lượng.</li>
+                        <li><strong>Cơm dừa:</strong> Chứa chất béo lành mạnh, bổ sung năng lượng và hỗ trợ hấp thụ vitamin.</li>
+                        <li><strong>Dầu dừa:</strong> Dưỡng da, tóc, ngừa viêm nhiễm, cải thiện chức năng miễn dịch.</li>
+                    </ul>
+                    <h3>Lợi ích sức khỏe:</h3>
+                    <ul>
+                        <li>Tăng cường miễn dịch nhờ các axit béo kháng khuẩn.</li>
+                        <li>Làm đẹp da và tóc nhờ vitamin E và axit lauric.</li>
+                        <li>Hỗ trợ giảm cân và cải thiện trao đổi chất.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>3. Các món từ dừa Bến Tre</h2>
+            <h3>Mứt dừa</h3>
+            <div class="image-content">
+                <img src="https://maydonggoi.com.vn/wp-content/uploads/2024/01/quy-trinh-san-xuat-keo-dua-3-1200x900.jpg" alt="Mứt Dừa">
+                <div class="text">
+                    <p><strong>Nguyên liệu:</strong></p>
+                    <ul>
+                        <li>Cơm dừa nạo sợi</li>
+                        <li>Đường trắng</li>
+                        <li>Sữa đặc</li>
+                        <li>Màu thực phẩm tự nhiên (lá dứa, củ dền)</li>
+                    </ul>
+                    <p><strong>Cách chế biến:</strong></p>
+                    <ol>
+                        <li>Rửa sạch cơm dừa với nước ấm để loại bỏ dầu, sau đó để ráo.</li>
+                        <li>Ướp dừa với đường và sữa đặc, để khoảng 2-3 giờ cho ngấm.</li>
+                        <li>Chia dừa thành nhiều phần, thêm màu thực phẩm tự nhiên vào từng phần.</li>
+                        <li>Sên trên lửa nhỏ, đảo đều tay cho đến khi dừa khô ráo, đường kết tinh bám đều.</li>
+                        <li>Để nguội và bảo quản trong hũ kín.</li>
+                        <a class="link-video" href="https://www.tiktok.com/@utvevuon99/video/7188458112410471682?is_from_webapp=1&sender_device=pc&web_id=7467452659059262992" target="_blank">Xem video chi tiết </a>
+                    </ol>
+                </div>
+            </div>
+
+            <h3>Tôm kho nước dừa</h3>
+            <div class="image-content">
+                <img src="https://cdn.pastaxi-manager.onepas.vn/content/uploads/articles/trangiang/tomrimnuocdua/luuy.png" alt="Tôm kho nước dừa">
+                <div class="text">
+                    <p><strong>Nguyên liệu:</strong></p>
+                    <ul>
+                        <li>Tôm sú</li>
+                        <li>Nước dừa tươi</li>
+                        <li>Hành, tỏi, gia vị</li>
+                    </ul>
+                    <p><strong>Cách chế biến:</strong></p>
+                    <ol>
+                        <li>Xào tỏi và hành băm, cho tôm vào đảo đều.</li>
+                        <li>Thêm nước dừa tươi, nêm nếm gia vị, kho đến khi nước dừa sệt lại.</li>
+                        <li>Dùng với cơm nóng.</li>
+                        <a
+                        class="link-video" href="https://www.tiktok.com/@m.ht.mt25/video/7448551004120812818?is_from_webapp=1&sender_device=pc&web_id=7467452659059262992" target="_blank">Xem video chi tiết</a>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>4. Chuẩn bị trước khi trồng</h2>
+            <table>
+                <tr>
+                    <th>Yếu tố</th>
+                    <th>Chi tiết</th>
+                </tr>
+                <tr>
+                    <td>Chọn giống</td>
+                    <td>Chọn giống dừa tốt, khỏe mạnh, phù hợp với điều kiện khí hậu và thổ nhưỡng nơi trồng. Một số giống phổ biến là dừa ta, dừa xiêm, dừa lùn. Ưu tiên cây giống từ các vườn ươm uy tín.</td>
+                </tr>
+                <tr>
+                    <td>Đất trồng</td>
+                    <td>Dừa phát triển tốt nhất trên đất cát pha, đất phù sa, thoát nước tốt. Độ pH thích hợp từ 5.0 - 6.5. Tránh trồng trên đất ngập nước lâu dài.</td>
+                </tr>
+                <tr>
+                    <td>Thời vụ trồng</td>
+                    <td>Có thể trồng dừa quanh năm, nhưng tốt nhất là vào đầu mùa mưa (tháng 5 - tháng 6) để cây có điều kiện phát triển tốt nhất.</td>
+                </tr>
+                <tr>
+                    <td>Chuẩn bị hố trồng</td>
+                    <td>Kích thước hố: 60x60x60 cm hoặc 80x80x80 cm. Bón lót: Trộn phân chuồng hoai mục (10-20 kg), phân lân (200-300g) vào đất hố, sau đó để khoảng 15-20 ngày trước khi trồng.</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>5. Kỹ thuật trồng và chăm sóc cây dừa</h2>
+            <h3>Kỹ thuật trồng</h3>
+            <p>Đặt cây con vào hố sao cho bầu cây ngang với mặt đất để rễ phát triển tốt.</p>
+<p>Lấp đất nhẹ nhàng, nén chặt xung quanh gốc để cố định cây, tránh làm vỡ bầu đất.</p>
+<p>Cắm cọc cố định để bảo vệ cây khỏi gió lớn, đặc biệt trong mùa mưa bão.</p>
+<p>Sau khi trồng, tưới đẫm nước để cây nhanh bén rễ.</p>
+<p>Che mát bằng rơm rạ hoặc lưới che trong những ngày nắng gắt để giảm thoát hơi nước.</p>
+            <h3>Chăm sóc cây dừa</h3>
+            <p><strong>Tưới nước:</strong> Giai đoạn đầu (1-2 năm): Tưới nước đều đặn, đảm bảo đất ẩm nhưng không ngập úng. Giai đoạn trưởng thành: Tưới nước đủ để cây phát triển tốt, đặc biệt trong mùa khô.</p>
+            <p><strong>Phân bón:</strong> Năm 1-2: Bón phân NPK (2-3 lần/năm) và phân chuồng hoai mục. Năm 3 trở đi: Bón phân theo chu kỳ sinh trưởng và phát triển (sau thu hoạch, trước ra hoa, nuôi trái).</p>
+            <p><strong>Cắt tỉa và tạo tán:</strong> Cắt bỏ các cành yếu, sâu bệnh. Tạo tán dạng tròn để cây nhận đủ ánh sáng và thông thoáng.</p>
+            <p><strong>Phòng trừ sâu bệnh:</strong> Kiểm tra thường xuyên, xử lý kịp thời các loại sâu bệnh thường gặp như: sâu đục thân, bệnh thán thư, bệnh cháy lá. Sử dụng các biện pháp sinh học hoặc hóa học theo hướng dẫn kỹ thuật.</p>
+        </div>
+
+        <div class="section">
+            <h2>6. Thu hoạch dừa</h2>
+            <p>Thời gian thu hoạch: Sau 3-4 năm trồng, tùy giống. Dấu hiệu nhận biết: Dừa chín thường có màu vàng, cam, hoặc nâu, tùy vào giống dừa. Một số loại dừa khi chín vẫn có màu xanh nhạt nhưng vỏ trở nên khô và cứng hơn.:</p>
+            <ul>
+                <li>Dùng dao cắt cuống trái (dài khoảng 5-10 cm).</li>
+                <li>Tránh làm rụng hoặc gây tổn thương trái.</li>
+                <li>Bảo quản ở nơi khô ráo, thoáng mát.</li>
+            </ul>
+            <p><strong>Lưu ý quan trọng:</strong> 
+                <p>Khí hậu: Theo dõi và phòng tránh tác động của mưa, gió mạnh có thể làm ảnh hưởng đến cây dừa và chất lượng quả.</p>
+                <p>Dinh dưỡng: Cung cấp phân bón đầy đủ, đặc biệt trong giai đoạn ra hoa và nuôi quả.</p>
+                <p> Dừa cần nhiều kali và magnesium để phát triển tốt và cho trái đạt chất lượng cao.</p>
+<p>Chăm sóc định kỳ: Tưới nước đều đặn và giữ cho cây luôn khỏe mạnh trong suốt quá trình sinh trưởng và thu hoạch.</p>
+        </div>
+
+        <a href="detail.html" class="back-to-home">Về trang chi tiết </a>
+        <div class="section">
+    <h2>7. Bình luận</h2>
+    <div id="comments-section">
+        <form id="comment-form">
+            <input type="text" id="name" placeholder="Tên của bạn" required>
+            <textarea id="comment" placeholder="Bình luận của bạn..." required></textarea>
+            <button type="submit">Gửi bình luận</button>
+        </form>
+        <div id="comments-list"></div>
+    </div>
+</div>
+
+<style>
+    #comments-section {
+        margin-top: 20px;
+        padding: 10px;
+        border: 1px solid #228B22;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+    #comment-form {
+        display: flex;
+        flex-direction: column;
+    }
+    #name, #comment {
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    #comment {
+        resize: vertical;
+    }
+    button {
+        padding: 10px;
+        background-color: #228B22;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #1c6b1c;
+    }
+    .comment-item {
+        margin-top: 10px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+</style>
+
+<script>
+    document.getElementById('comment-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        const name = document.getElementById('name').value;
+        const comment = document.getElementById('comment').value;
+
+        const commentsList = document.getElementById('comments-list');
+        const commentItem = document.createElement('div');
+        commentItem.classList.add('comment-item');
+        commentItem.innerHTML = <strong>${name}:</strong> <p>${comment}</p>;
+        
+        commentsList.appendChild(commentItem);
+
+        // Reset form fields
+        document.getElementById('name').value = '';
+        document.getElementById('comment').value = '';
+    });
+</script>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Dừa Bến Tre. Bản quyền thuộc về <a href="index.html" style="color: white;">Trái Cây Đặc Sản Bến Tre</a>.</p>
+    </footer>
+
+    <script>
+        window.addEventListener('load', function() {
+            document.body.classList.add('loaded');
+        });
+
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        const images = document.querySelectorAll('img');
+        const headings = document.querySelectorAll('h2');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        });
+
+        images.forEach(image => {
+            observer.observe(image);
+        });
+
+        headings.forEach(heading => {
+            observer.observe(heading);
+        });
+    </script>
+    
+</body>
+</html>
